@@ -23,8 +23,10 @@
   object-fit: cover;
 }
 .article-card_container {
+  height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
+  overflow-y: scroll;
 }
 .article-card_link {
   display: block;
