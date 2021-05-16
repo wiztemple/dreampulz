@@ -30,11 +30,15 @@
 }
 .article-card_link {
   display: block;
+  width: 100%;
   font-size: 14px;
   text-decoration: underline;
   color: #000;
   font-weight: 500;
   padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 .article-card {
   background-color: #fff;
@@ -124,7 +128,7 @@
   padding-right: 25px;
 }
 .customized-modal_title {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 .customized-modal_image {
   display: block;
@@ -176,7 +180,7 @@
 }
 .customized-modal_subcontent {
   display: block;
-  font-size: 14px;
+  font-size: 11px;
   color: #656363;
   padding-top: 5px;
 }
@@ -234,8 +238,12 @@
   border-radius: 100%;
 }
 .customized-modal_comment-content {
-  flex-grow: 100%;
   flex: 1 1 auto;
+}
+.customized-modal_comment-content_body {
+  padding: 10px;
+  background: #F6F9FB;
+  border-radius: 4px;
 }
 .customized-modal_comment-header {
   display: flex;
