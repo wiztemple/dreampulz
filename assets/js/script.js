@@ -11,3 +11,13 @@ const toggleMembersDropdown = () => {
 }
 toggleMembersDropdown()
 // toggleBtn.forEach(tgglebtn => tgglebtn.addEventListener('click', () => toggleMembersDropdown()))
+
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  dots: '.dots',
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
