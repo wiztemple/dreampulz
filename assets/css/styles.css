@@ -597,6 +597,7 @@
 }
 .signup-info {
   position: relative;
+  display: none;
 }
 .signup-overlay, .login-overlay {
   position: absolute;
@@ -724,7 +725,13 @@
   color: #797979;
   font-weight: 600;
 }
+.extra-info {
+  text-align: center;
+}
 @media (min-width: 768px) {
+  .signup-info {
+    display: block;
+  }
   .signup-page {
     width: 100vw;
     height: 100vh;
@@ -767,6 +774,9 @@
   .signup-overlay > h2 {
     font-size: 32px;
     font-weight: 800;
+  }
+  .extra-info {
+    text-align: left;
   }
 }
 
