@@ -288,9 +288,10 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .profilesetup-header {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .profilesetup-header > h1 {
+  padding: 0 5px;
   text-align: center;
   font-size: 28px;
   font-weight: 600;
@@ -311,7 +312,7 @@
   border-radius: 10px;
 }
 .profilesetup-menu_item {
-  padding: 30px;
+  padding: 5px 30px;
   width: 100%;
 }
 .profilesetup-menu_item > span {
@@ -355,6 +356,15 @@
     display: flex;
     justify-content: flex-start;
   }
+  .profilesetup-menu_item {
+    padding: 30px 30px;
+  }
+  .profilesetup-header {
+    padding-top: 100px;
+  }
+  .profilesetup-header > h1 {
+    padding: 0 0;
+  }
 }
 /* utilities */
 .text-sm {
@@ -385,7 +395,7 @@
   width: 100%;
 } */
 .profiledetails-header {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 .profiledetails-header > h1 {
@@ -477,18 +487,21 @@
     background: #FFFFFF;
     padding: 20px 60px;
   }
+  .profiledetails-header {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
 }
 
 /* Job Roles */
-.jobroles-menu {
+/* .jobroles-menu {
   width: 100%;
-  height: 100%;
   padding: 20px 10px;
   background: #FFFFFF;
   border: 1px solid rgba(235, 234, 236, 0.69);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-}
+} */
 .jobroles-menu_header {
   display: flex;
   justify-content: space-between;
@@ -507,8 +520,8 @@
   background-color: transparent;
 }
 .jobroles-header {
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 0;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -525,8 +538,10 @@
   text-align: center;
 }
 .jobroles-menu {
+  width: 100%;
   display: block;
-  margin: 40px 20px 40px 20px;
+  padding: 20px 10px;
+  margin: 40px 0px 0px 0px;
   background: #FFFFFF;
   border: 1px solid rgba(235, 234, 236, 0.69);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
@@ -573,7 +588,7 @@
   .jobroles-menu {
     width: 1033px;
     height: 400px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 20px 40px;
   }
   .jobrole-selectgroup {
