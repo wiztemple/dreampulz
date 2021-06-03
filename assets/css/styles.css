@@ -135,8 +135,3 @@
 .bg-coregray {
   background: #F6F9FB;
 }
-.centralized-btns {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
