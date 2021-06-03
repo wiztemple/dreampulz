@@ -44,326 +44,85 @@
 .object-cover {
   object-fit: cover;
 }
-/* .bg-lightorange {
-  background: #FFECCF;
-}
-.bg-lightdodger {
-  background: #CFEBFF;
-}
-.lacedorange {
-  color: #CB8E16;
-}
-.dodgertext {
-  color: #1292EF;
-}
 .sidebar-image {
   display: none;
-} */
-/*search*/
-
-/*colors */
-/* .dodger {
-  color: #1292EF;
 }
-.crimson {
-  color: #CB1616;
+/* company list */
+.companylist-layout {
+  padding: 0 20px;
 }
-.redfade {
-  color: #FF5E5E;
-}
-.fadeorange {
-  color: #E4A862;
-}
-.limegreen {
-  color: #96D98B;
-}
-.royalpurple {
-  color: #4E4EA1;
-} */
-
-.app-layout {
-  display: block;
-}
-
-/* members */
-.members-layout {
-  width: 100%;
-  display: block;
-}
-.members-section_info {
+.companylist-section_info {
   padding: 20px 40px;
   background: rgba(253, 217, 135, 0.2);
   border-radius: 10px;
 }
-.members-section_info > span {
+.companylist-section_info > span {
   font-size: 14px;
   color: #E5A921;
 }
-.members-hamburger > button {
-  padding: 10px;
-  background: #C6C5E6;
+.companylist-wrapper {
+  padding-top: 20px;
+}
+.companylist-card {
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  border: none;
+  overflow-x: hidden;
 }
-.memberscard-wrapper {
-  padding-top: 30px;
-}
-/* membercard */
-.membercard {
+.companylist-card_image {
   position: relative;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background: #FFFFFF;
-  padding: 20px 20px 5px 20px;
-  box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
 }
-.memberToggleDropdown {
-  position: absolute;
-  display: none;
-  right: 65px;
-  top: 105px;
-  background: #FFFFFF;
-  box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-.memberToggleDropdown::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 5px;
-  right: -5px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-  box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.05);
-}
-.memberToggleDropdown > button {
-  display: block;
+.companylist-card_image > img {
   width: 100%;
-  background-color: #fff;
-  padding: 5px 10px;
-  border-radius: 0;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid #EFEFEF;
-}
-.memberToggleDropdown > button > span{
-  display: block;
-  font-size: 12px;
-}
-.memberToggleDropdown > button:nth-child(1) > span{
-  color: #96D98B;
-}
-.memberToggleDropdown > button:nth-child(2) > span{
-  color: #1292EF;
-}
-.memberToggleDropdown > button:nth-child(3) > span{
-  color: #898989;
-}
-.membercard-top {
-  display: block;
-}
-.showDropdown {
-  display: block;
-}
-.membercard-avatar {
-  width: 66px;
-  height: 66px;
-  position: relative;
-}
-.membercard-avatar > img {
-  width: 65px;
-  height: 65px;
-  border-radius: 100%;
+  height: 100px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.membercard-status {
+.companylist-card_image-abbr {
   position: absolute;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background: #96D98B;
-  border: 1px solid #FFFFFF;
-  right: 10px;
-  top: 55px;
+  display: block;
+  background-color: #684EA1;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  left: 15px;
+  top: 15px;
+  padding:0 4px;
 }
-.membercard-initials {
+.companylist-card_image-name {
+  position: absolute;
+  display: block;
+  background-color: #684EA1;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  right: 20px;
+  bottom: 10px;
+  padding: 4px 10px;
+}
+.companylist-card_content {
+  padding: 20px 10px;
+}
+.companylist-card_span {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
-}
-.membercard-initials > h1 {
+  gap: 12px;
   font-size: 14px;
-  font-weight: 500;
+  color: gray;
 }
-.membercard-initials > button {
-  display: block;
-  background-color: transparent;
-  border: none;
+.companylist-card_span > span:first-child {
+  color: #000;
 }
-.membercard-initials > button:focus {
-  outline-color: turquoise;
-}
-.membercard-location {
-  display: block;
-  padding: 10px 0;
-}
-.membercard-location > span:nth-child(2) {
-  font-size: 14px;
-  color: #898989;
-  margin-left: 6px;
-}
-.membercard-user_details p {
-  font-size: 14px;
-  color: #898989;
-  padding-right: 40px;
-}
-.bb-gray {
-  border-bottom: 1px solid #c4c4c4;
-}
-.membercard-bottom {
-  display: block;
-}
-.membercard-bottom_left > span:nth-child(2) {
-  font-size: 12px;
-  color: #FFC272;
-  text-overflow: ellipsis;
-}
-.membercard-bottom_right > span:nth-child(2) {
-  font-size: 12px;
-  color: #1DC9BB;
-  text-overflow: ellipsis;
-}
-.membercard-footer {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 2px;
-}
-.membercard-footer > span {
-  font-size: 12px;
-  color: #96D98B;
+.companylist-card_span > span:last-child {
+  color: gray;
 }
 @media (min-width: 768px) {
   .app-layout {
     display: flex;
   }
-  .members-layout {
-    width: 100%;
-    display: flex;
-  gap: 24px;
-  padding: 0 40px;
-  }
-  .membercard {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .membercard-top {
-    display: flex;
-    gap: 24px;
-  }
-  .membercard-bottom {
-    display: flex;
-    justify-content: space-between;
-  }
-  .membercard-footer {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 2px;
-  }
-  .membercard-initials {
-    padding-top: 0;
-  }
-  .memberToggleDropdown {
-    top: 20px;
-  }
-}
-/* Profile Setup */
-.basic-nav {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-}
-.profilesetup-header {
-  padding-top: 50px;
-}
-.profilesetup-header > h1 {
-  padding: 0 5px;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  color: #584475;
-}
-.profilesetup-header > span {
-  display: block;
-  font-size: 15px;
-  color: #4f4f4f;
-  text-align: center;
-}
-.profilesetup-menu {
-  display: block;
-  margin: 40px auto;
-  background: #FFFFFF;
-  border: 1px solid rgba(235, 234, 236, 0.69);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-.profilesetup-menu_item {
-  padding: 5px 30px;
-  width: 100%;
-}
-.profilesetup-menu_item > span {
-  display: flex;
-  justify-content: center;
-}
-.profilesetup-menu_item > h1 {
-  font-size: 15px;
-  padding-top: 20px;
-  font-weight: 600;
-  color: #4f4f4f;
-  text-align: center;
-}
-.profilesetup-menu_item > p {
-  font-size: 13px;
-  font-weight: 400;
-  color: #4f4f4f;
-  text-align: center;
-}
-.profilesetup-btn_wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
-}
-.profilesetup-btn_wrapper > button {
-  background-color: #7A59AD;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 20px;
-  color: #fff;
-  font-size: 13px;
-  border-radius: 4px;
-}
-.profilesetup-btn_wrapper > button:hover {
-  background-color: #6f43b3;
-  color: #eee;
-}
-@media (min-width: 768px) {
-  .profilesetup-menu {
-    width: 1252px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .profilesetup-menu_item {
-    padding: 30px 30px;
-  }
-  .profilesetup-header {
-    padding-top: 100px;
-  }
-  .profilesetup-header > h1 {
-    padding: 0 0;
+  .sidebar-image {
+    display: block;
   }
 }
 /* utilities */
@@ -380,470 +139,4 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
-}
-.custom-checkbox .form-check-input:checked~.form-check-label::before{
-  background-color:#7A59AD !important;
-}
-/* Profile setup details */
-.profiledetails {
-  overflow-x: hidden;
-}
-/* .profiledetails-menu {
-  width: 100%;
-}
-.profiledetails-menu > form {
-  width: 100%;
-} */
-.profiledetails-header {
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-.profiledetails-header > h1 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  color: #584475;
-}
-.profiledetails-header > span {
-  display: block;
-  font-size: 15px;
-  color: #4f4f4f;
-  text-align: center;
-}
-.profiledetails-form {
-  width: 100%;
-  background: #FFFFFF;
-  padding: 20px 20px;
-  border: 1px solid rgba(235, 234, 236, 0.69);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-.profiledetails-menu > form {
-  width: 100%;
-} 
-.profiledetails-field {
-  width: initial;
-}
-.profiledetails-field > input {
-  background: #F6F9FB;
-  border: 1px solid #E5E5E5;
-  border-radius: 4px;
-}
-.profiledetails-form > span {
-  display: block;
-  font-size: 13px;
-  color: #797979;
-}
-.profiledetails-field > span, .field-desc {
-  display: block;
-  padding-top: 5px;
-  font-size: 10px;
-  color: #A38CC6;
-}
-.profiledetails-field > label {
-  display: block;
-  padding-top: 5px;
-  font-size: 13px;
-  color: #797979;
-}
-.profiledetails-menu {
-  display: flex;
-  justify-content: center;
-}
-.profiledetails-btn_wrapper {
-  display: flex;
-  gap: 10px;
-}
-.profiledetails-btn_wrapper > button:nth-child(1) {
-  background-color: #fff;
-  color: #7A59AD;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  font-size: 13px;
-  border: 1px solid #7A59AD;
-  border-radius: 4px;
-}
-.profiledetails-btn_wrapper > button:nth-child(2) {
-  background-color: #7A59AD;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  color: #fff;
-  font-size: 13px;
-  border-radius: 4px;
-}
-.profilesetup-btn_wrapper > button:hover {
-  background-color: #6f43b3;
-  color: #eee;
-}
-@media (min-width: 768px) {
-  .profiledetails-field > input {
-    width: 100%;
-    background: #F6F9FB;
-    border: 1px solid #E5E5E5;
-    border-radius: 4px;
-  }
-  .profiledetails-form {
-    width: 1033px;
-    background: #FFFFFF;
-    padding: 20px 60px;
-  }
-  .profiledetails-header {
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-}
-
-/* Job Roles */
-/* .jobroles-menu {
-  width: 100%;
-  padding: 20px 10px;
-  background: #FFFFFF;
-  border: 1px solid rgba(235, 234, 236, 0.69);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-} */
-.jobroles-menu_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-.jobroles-menu_header > h1 {
-  font-size: 15px;
-  color: #4F4F4F;
-}
-.jobroles-menu_arrows {
-  display: flex;
-}
-.jobroles-menu_arrows > button {
-  border: none;
-  background-color: transparent;
-}
-.jobroles-header {
-  padding-top: 40px;
-  padding-bottom: 0;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.jobroles-header > h1 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  color: #584475;
-}
-.jobroles-header > span {
-  display: block;
-  font-size: 15px;
-  color: #4f4f4f;
-  text-align: center;
-}
-.jobroles-menu {
-  width: 100%;
-  display: block;
-  padding: 20px 10px;
-  margin: 40px 0px 0px 0px;
-  background: #FFFFFF;
-  border: 1px solid rgba(235, 234, 236, 0.69);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-/* .jobrole-selectgroup-item {} */
-.jobrole-selectgroup-item_child > h1 {
-  font-size: 13px;
-  padding-top: 10px;
-}
-.jobrole-selectgroup-item_child > p {
-  font-size: 12px;
-}
-.jobrole-selectgroup-item_child {
-  position: relative;
-  display: block;
-  padding: 10px 30px;
-  border: 1px solid rgba(235, 234, 236, 0.69);
-  border-radius: 4px;
-  line-height: 1.4285714;
-  background: #fff;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  transition: border-color .3s,background .3s,color .3s;
-}
-.jobrole-selectgroup-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-}
-.jobrole-selectgroup-input:checked+.jobrole-selectgroup-item_child {
-  z-index: 1;
-  color: #fff;
-  background: #7A59AD;
-  border: 1px solid #7A59AD;
-}
-
-@media (min-width: 768px) {
-  .jobroles-menu {
-    width: 1033px;
-    height: 400px;
-    margin: 0 auto;
-    padding: 20px 40px;
-  }
-  .jobrole-selectgroup {
-    display: flex;
-    gap: 10px;
-  }
-  .jobroles-header {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* sign up, Login and forget password fom */
-.signup-page {
-  width: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
-}
-.signup-info {
-  position: relative;
-  display: none;
-}
-.signup-overlay, .login-overlay {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(16, 13, 13, 0.75);
-  border-radius: 10px;
-}
-.signup-overlay > h1, .login-overlay > h1 {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 400;
-}
-.login-overlay > h1 {
-  padding-top: 40px;
-}
-.login-overlay > p {
-  padding-top: 40px;
-}
-.signup-overlay > h2 {
-  font-size: 28px;
-  color: #fff;
-  font-weight: 600;
-}
-.login-overlay > p {
-  font-size: 2opx;
-  color: #fff;
-}
-.signup-overlay > p {
-  font-size: 20px;
-  color: #fff;
-  padding-top: 10px;
-}
-.signup-overlay > span, .login-overlay > span {
-  display: block;
-  color: #fff;
-  font-size: 20px;
-  padding-top: 20px;
-}
-.signup-overlay > a, .login-overlay > a {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
-}
-.colored-box {
-  display: flex;
-}
-.lightpurple-box, .darkpurplepurple-box, .torquoise-box, .orange-box {
-  width: 100%;
-  height: 250px;
-}
-.lightpurple-box {
-  background-color: #7F5CAA;
-}
-.darkpurplepurple-box {
-  background-color: #584475;
-}
-.torquoise-box {
-  background-color: #07C6CD;
-}
-.orange-box {
-  background-color: #CD7708;
-}
-.signupform {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.signupform-box {
-  width: 100%;
-  padding: 30px;
-  margin-top: 30px;
-  border: 1px solid #E5E5E5;
-  border-radius: 10px;
-}
-.signupform-box > h1 {
-  font-size: 28px;
-  color: #584475;
-  font-weight: 600;
-}
-.signupform-box > p {
-  font-size: 15px;
-  color: #4F4F4F;
-}
-.signupform-box > form > button {
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #7A59AD;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-}
-.termsandconditions {
-  color: #584475;
-  text-decoration: underline;
-}
-.signupform-field {
-  width: 100%;
-}
-.signupform-field > input::placeholder {
-  color: #C1C1C1;
-}
-.signupform-field > input {
-  background: #F6F9FB;
-  border: 1px solid #E5E5E5;
-  border-radius: 4px;
-}
-
-.signupform-field > label {
-  display: block;
-  padding-top: 5px;
-  font-size: 13px;
-  color: #797979;
-  font-weight: 600;
-}
-.extra-info {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .signup-info {
-    display: block;
-  }
-  .signup-page {
-    width: 100vw;
-    height: 100vh;
-  }
-  .signup-overlay, .login-overlay {
-    position: absolute;
-    width: 538px;
-    height: 620px;
-    padding: 60px;
-  }
-  .signup-overlay > span {
-    padding-top: 120px;
-  }
-  .login-overlay > span {
-    padding-top: 200px;
-  }
-  .signupform {
-    height: 100vh;
-  }
-  .lightpurple-box, .darkpurplepurple-box, .torquoise-box, .orange-box {
-    width: 100%;
-    height: 50vh;
-  }
-  .signupform-box {
-    width: 589px;
-  }
-  .form-logo {
-    margin-top: 0;
-  }
-  .signup-overlay > p {
-    padding-top: 40px;
-  }
-  .signup-overlay > h1 {
-    font-size: 28px;
-  }
-  .login-overlay > h1 {
-    font-size: 32px;
-    font-weight: 800;
-  }
-  .signup-overlay > h2 {
-    font-size: 32px;
-    font-weight: 800;
-  }
-  .extra-info {
-    text-align: left;
-  }
-}
-
-/* forget password */
-.forgetpassword-form {
-  padding: 0 10px;
-}
-.forgetpassword {
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-}
-.forgetpassword-box > form > button {
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #7A59AD;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-}
-.forgetpassword-box {
-  width: 100%;
-  padding: 40px 20px;
-  margin-top: 30px;
-  border: 1px solid #E5E5E5;
-  border-radius: 10px;
-}
-.forgetpassword-box > h1 {
-  font-size: 28px;
-  color: #584475;
-  font-weight: 600;
-}
-.forgetpassword-box > p {
-  font-size: 15px;
-  color: #4F4F4F;
-}
-@media (min-width: 768px) {
-  .forgetpassword-form {
-    padding: 0 0;
-  }
-  .forgetpassword {
-    width: 100vw;
-    height: 100vh;
-  }
-  .forgetpassword-box {
-    width: 589px;
-    padding: 40px 40px;
-  }
 }
