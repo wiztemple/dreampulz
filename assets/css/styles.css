@@ -110,9 +110,11 @@
   gap: 12px;
   font-size: 14px;
   color: gray;
+  margin-top: 2px;
 }
 .companylist-card_span > span:first-child {
   color: #000;
+  font-weight: 500;
 }
 .companylist-card_span > span:last-child {
   color: gray;
