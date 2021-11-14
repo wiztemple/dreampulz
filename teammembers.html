@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Dreampulze</title>
+</head>
+
+<body>
+  <div class="body-child">
+    <aside class="sidebar">
+      <img src="./assets/images/sidebar.png" />
+    </aside>
+    <main class="main-wrapper container-fluid">
+      <h1>Cyber & network Operation Team</h1>
+      <div class="tabnav">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="teammembers.html">Team Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teamperformance.html">Performance Board</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-projects-tab" data-toggle="pill" href="#" role="tab"
+              aria-controls="pills-projects" aria-selected="false">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-conversations-tab" data-toggle="pill" href="#" role="tab"
+              aria-controls="pills-conversations" aria-selected="false">
+              Conversations
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-calendar-tab" data-toggle="pill" href="#" role="tab"
+              aria-controls="pills-calendar" aria-selected="false">
+              Team Calendar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="teammembers">
+        <button type="button" class="btn invitemembers-btn" data-toggle="modal" data-target="#myModal">Invite
+          Member</button>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span class="team-lead">Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://media.istockphoto.com/photos/good-opportunity-just-made-its-way-to-her-picture-id1284106261?b=1&k=20&m=1284106261&s=170667a&w=0&h=tT99_j-_Q7flxbpQNGPGL6fT6n7h6HokRMTkAZp_DPQ="
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://media.istockphoto.com/photos/good-opportunity-just-made-its-way-to-her-picture-id1284106261?b=1&k=20&m=1284106261&s=170667a&w=0&h=tT99_j-_Q7flxbpQNGPGL6fT6n7h6HokRMTkAZp_DPQ="
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teammembers-card">
+              <button class="btn teammembers-card-btn">
+                <svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585787 3.41421C0.96086 3.78929 1.46957 4 2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0V0ZM2 8C1.46957 8 0.96086 8.21071 0.585787 8.58579C0.210714 8.96086 0 9.46957 0 10C0 10.5304 0.210714 11.0391 0.585787 11.4142C0.96086 11.7893 1.46957 12 2 12C2.53043 12 3.03914 11.7893 3.41421 11.4142C3.78929 11.0391 4 10.5304 4 10C4 9.46957 3.78929 8.96086 3.41421 8.58579C3.03914 8.21071 2.53043 8 2 8V8ZM2 16C1.46957 16 0.96086 16.2107 0.585787 16.5858C0.210714 16.9609 0 17.4696 0 18C0 18.5304 0.210714 19.0391 0.585787 19.4142C0.96086 19.7893 1.46957 20 2 20C2.53043 20 3.03914 19.7893 3.41421 19.4142C3.78929 19.0391 4 18.5304 4 18C4 17.4696 3.78929 16.9609 3.41421 16.5858C3.03914 16.2107 2.53043 16 2 16V16Z"
+                    fill="#666666" />
+                </svg>
+              </button>
+              <div class="teammembers-card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                  alt="member avatar" />
+                <span>Igwe Sandra</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg invite-modal-dialog">
+      <div class="modal-content invite-members-modal">
+        <!-- Modal body -->
+        <button type="button" class="close dismiss-invite-modal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body invite-members">
+          <h1>Invite Members</h1>
+          <p>
+            Invite new members to your team, only premium <br> subscriber can be added to your team
+          </p>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1" class="invite-members_label">What Job Role are you looking
+                for?</label>
+              <div class="invite-select-wrapper">
+                <select class="form-control form-control-lg invite-members_select" id="exampleFormControlSelect1">
+                  <option>Cloud Computing Admin</option>
+                </select>
+                <div class="invite-search-btn">
+                  <button type="button" class="btn">Search</button>
+                </div>
+              </div>
+            </div>
+            
+          </form>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

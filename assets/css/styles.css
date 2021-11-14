@@ -1,139 +1,321 @@
-.flex {
-  display: flex;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.gap-10 {
-  display: flex;
-  gap: 10px;
-}
-.block {
+.body-child {
   display: block;
 }
-.flex-start {
-  display: flex;
-  justify-content: flex-start;
-}
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-.relative {
-  position: relative;
-}
-.text-xs {
-  font-size: 13px;
-}
-.text-underline {
-  text-decoration: underline;
-}
-.text-coregray {
-  color: #797979;
-}
-.text-darkpurple {
-  color: #584475;
-}
-.py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.w-full {
-  width: 100%;
-}
-.w-250 {
-  width: 250px;
-}
-.object-cover {
-  object-fit: cover;
-}
-.sidebar-image {
+.sidebar {
   display: none;
 }
-/* company list */
-.companylist-layout {
-  padding: 0 20px;
-}
-.companylist-section_info {
-  padding: 20px 40px;
-  background: rgba(253, 217, 135, 0.2);
-  border-radius: 10px;
-}
-.companylist-section_info > span {
-  font-size: 14px;
-  color: #E5A921;
-}
-.companylist-wrapper {
-  padding-top: 20px;
-}
-.companylist-card {
-  margin-top: 20px;
-  background-color: #fff;
-  box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  overflow-x: hidden;
-}
-.companylist-card_image {
-  position: relative;
-}
-.companylist-card_image > img {
+.main-wrapper {
   width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  padding: 20px;
+  font-family: 'Heebo', sans-serif;
 }
-.companylist-card_image-abbr {
-  position: absolute;
-  display: block;
-  background-color: #684EA1;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 4px;
-  left: 15px;
-  top: 15px;
-  padding:0 8px;
+.main-wrapper > h1 {
+  font-size: 26px;
+  font-weight: bold;
 }
-.companylist-card_image-name {
-  position: absolute;
-  display: block;
-  background-color: #684EA1;
-  color: #fff;
-  font-size: 14px;
+/* .tabnav {
+  padding: 20px;
+} */
+.nav-pills {
+  background-color: #9475C11D;
   border-radius: 5px;
-  right: 10px;
-  bottom: 10px;
-  padding: 4px 10px;
 }
-.companylist-card_content {
-  padding: 20px 10px;
+.nav-link {
+  color: #969696;
+  padding: 15px 20px;
+  margin: 5px 0;
 }
-.companylist-card_span {
-  display: flex;
-  gap: 12px;
+.nav-link:hover {
+  color: #9475C1;
+}
+.nav-link.active {
+  background-color: #9475C1 !important;
+}
+.team-performance {
+  background: #FBFBFB;
+  box-shadow: 0px 3px 3px #00000008;
+  border: 1px solid #66666610;
+  border-radius: 5px;
+  padding: 20px 20px 100px 20px;
+}
+
+/* members tab */
+.team-performance-member {
+  width: 100%;
+}
+.team-performance-member > h1 {
+  font-size: 20px;
+  color: #0C131C;
+  border-bottom: 1px solid #0C131C;
+  padding: 0 10px 8px 10px;
+}
+.team-performance-member > span {
+  display: block;
   font-size: 14px;
-  color: gray;
-  margin-top: 2px;
+  color: #969696;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.companylist-card_span > span:first-child {
-  color: #000;
-  font-weight: 500;
+.team-performance-member-avatar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #6666662C;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 5px 10px;
 }
-.companylist-card_span > span:last-child {
-  color: gray;
+.team-performance-member-avatar img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 1px solid #6666662C;
 }
-@media (min-width: 768px) {
-  .app-layout {
-    display: flex;
-  }
-  .sidebar-image {
-    display: block;
-  }
+/* .team-performance-member-avatar span {
+  font-size: 14px;
+} */
+.team-performance-card {
+  width: 100%;
+}
+.team-performance-card > h1 {
+  font-size: 20px;
+  color: #0C131C;
+  padding: 16px 10px 8px 10px;
+  border-bottom: 1px solid #0C131C;
+}
+.team-performance-card-header, .team-performance-card-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.team-performance-card-header > span {
+  font-size: 14px;
+  color: #969696;
+  display: block;
+  padding-bottom: 6px;
+}
+.team-performance-card-header {
+  padding: 0 10px;
+}
+.team-performance-card-body {
+  height: 70px;
+  background: #FFFFFF;
+  border: 1px solid #6666662C;
+  border-radius: 2px;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 5px;
+}
+.team-performance-card-body > span {
+  color: #0C131C;
+  text-align: left;
 }
 /* utilities */
-.text-sm {
-  font-size: 13px;
+.pl-0 {
+  padding-left: 0 !important;
 }
-.text-coregray {
-  color: #797979;
+.pr-0 {
+  padding-right: 0 !important;
 }
-.bg-coregray {
-  background: #F6F9FB;
+@media (min-width: 501px) {
+  .body-child {
+    display: flex;
+  }
+  .sidebar {
+    display: block;
+    width: 300px;
+    height: 100vh;
+  }
+  .sidebar > img {
+    width: 100%;
+    height: 100%;
+  }
+  .team-performance-card > h1 {
+    padding: 0 10px 8px 10px;
+  }
+  .team-performance-card-body {
+    background: #FFFFFF;
+    border-left: none;
+  }
+}
+
+/* team members page */
+.teammembers {
+  padding: 20px 20px 100px 20px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 5px 5px 22px #58447517;
+  border: 1px solid #00000019;
+  border-radius: 5px;
+}
+.invitemembers-btn {
+  background: #FFFFFF;
+  border: 2px solid #9475C1;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #666666;
+  padding: 10px 30px;
+}
+.teammembers-card {
+  margin-top: 30px;
+  position: relative;
+  background: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  padding: 17px 0 22px 0;
+  border: 1px solid #6666662C;
+  border-radius: 5px;
+}
+.teammembers-card-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.teammembers-card-content > img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #6666662C;
+  margin: 0 auto;
+}
+.teammembers-card-content span {
+  display: block;
+  text-align: center;
+}
+.teammembers-card-content span:first-child {
+  font-size: 18px;
+  color: #0C131C;
+}
+.teammembers-card-content span:last-child {
+  font-size: 16px;
+  color: #666666;
+}
+.teammembers-card-content .team-lead {
+  color: #9475C1 !important;
+  font-weight: bold;
+}
+
+/* members modal */
+/* .invite-modal-dialog {
+  width: 750px;
+} */
+.invite-modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+.invite-members-modal {
+  position: relative;
+  padding: 10px;
+}
+.dismiss-invite-modal {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  padding: 100px;
+  right: 30px;
+  z-index: 10;
+}
+.invite-members > h1 {
+  font-size: 26px;
+  padding: 30px 0 0 0;
+}
+.invite-members > p {
+  color: #969696;
+}
+.invite-members > form {
+  padding-bottom: 20px;
+}
+.invite-members_label {
+  font-size: 20px;
+  display: block;
+  color: #0C131C;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.invite-select-wrapper {
+  display: block;
+}
+.invite-search-btn {
+  margin-top: 10px;
+  margin-left: 0;
+}
+.invite-search-btn > button {
+  display: block;
+  background-color: #584475;
+  color: #fff;
+  padding: 10px 35px;
+}
+.invite-member-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F3EFF8;
+  border-radius: 5px;
+  padding: 16px 20px;
+  margin-top: 14px;
+}
+.invite-member-card > button {
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #6666662C;
+  border-radius: 5px;
+}
+.invite-member-card_details {
+  display: block;
+}
+.invite-member-card_details > img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #6666662C;
+}
+.invite-member-card_title span {
+  display: block;
+}
+.invite-member-card_title span:first-child {
+  color: #0C131C;
+  font-size: 16px;
+  font-weight: 500;
+}
+.invite-member-card_title span:last-child {
+  color: #666666;
+  font-size: 14px;
+}
+@media (min-width: 501px) {
+  .invite-select-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .invite-search-btn {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  .invite-members_select{
+    width: 500px;
+  }
+  .invite-members-modal {
+    width: 700px;
+    padding: 20px;
+  }
+  .invite-member-card_title span:first-child {
+    font-size: 18px;
+  }
+  .invite-member-card_title span:last-child {
+    font-size: 16px;
+  }
+  .invite-member-card_details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
