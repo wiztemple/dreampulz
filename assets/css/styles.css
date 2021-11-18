@@ -458,12 +458,11 @@ body {
 
 /* Approve or Deny section */
 .approvedeny-header {
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 20px 0 0 0;
 }
 .approvedeny-header > h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 .approvedeny {
   background: #FBFBFB;
@@ -490,6 +489,7 @@ body {
   background-color: #fff;
   border: 1px solid #00000019 !important;
   border-radius: 5px;
+  margin-left: 10px;
 }
 .approvedeny > .table th, .approvedeny > .table thead th {
   border-bottom: 0;
@@ -497,6 +497,9 @@ body {
   font-weight: normal;
   color: #969696;
   padding-bottom: 0;
+}
+.approvedeny-check-all > .form-check-label {
+  padding-left: 22px;
 }
 .approvedeny-item {
   background: #FFFFFF;
@@ -566,10 +569,12 @@ body {
   color: #0C131C;
 }
 .approvedeny-item_four > a {
-  text-align: left;
+  width: 60px;
+  display: block;
+  font-size: 14px;
   text-decoration: underline;
   color: #4E4F4F;
-  padding-left: 10px;
+  padding-left: 0;
 }
 .approvedeny-body_actions-btns {
   display: flex;
@@ -589,12 +594,31 @@ body {
   color: #C75B33;
   border-radius: 10px;
 }
+.approvedeny-body_actions-btns > button {
+  font-size: 14px;
+}
 @media (min-width: 501px) {
+  .approvedeny-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .approvedeny-header > h1 {
+    font-size: 24px;
+  }
   .approvedeny {
     width: 100%;
   }
   .approvedeny .table-responsive {
     display: inline-table;
+  }
+  .approvedeny-body_actions-btns > button {
+    font-size: 16px;
+  }
+  .approvedeny-item_four > a {
+    width: auto;
+    padding-left: 10px;
+    font-size: 16px;
   }
 }
 
