@@ -469,7 +469,7 @@ body {
   box-shadow: 0px 3px 3px #00000008;
   border: 1px solid #66666610;
   border-radius: 5px;
-  /* padding: 0 20px 100px 20px; */
+  padding: 0 10px 80px 10px;
   margin-top: 26px;
 }
 .approvedeny > .table-responsive {
@@ -608,6 +608,7 @@ body {
   }
   .approvedeny {
     width: 100%;
+    padding: 0 20px 100px 20px;
   }
   .approvedeny .table-responsive {
     display: inline-table;
