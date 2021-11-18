@@ -796,3 +796,19 @@ body {
     padding: 0.375rem 0.75rem
   }
 }
+
+/* utilities */
+.hide-on-mobile {
+  display: none;
+}
+.hide-on-desktop {
+  display: block;
+}
+@media (min-width: 501px) {
+  .hide-on-mobile {
+    display: block;
+  }
+  .hide-on-desktop {
+    display: none;
+  }
+}
