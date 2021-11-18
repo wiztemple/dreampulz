@@ -682,6 +682,13 @@ body {
   color: #0C131C;
   font-weight: 500;
 }
+.conversations-nav > .nav-link.active svg path {
+  fill: currentColor;
+}
+.conversationscard-wrapper {
+  height: 80vh;
+  overflow-y: scroll;
+}
 .conversations {
   background: #FBFBFB;
   box-shadow: 5px 5px 22px #58447517;
@@ -694,12 +701,11 @@ body {
 }
 .conversationscard {
   background-color: #fff;
-  display: flex;
-  gap: 16px;
+  display: block;
   padding: 20px;
-  border-bottom: 1px solid #66666610;
-  border-left: 1px solid #66666610;
-  border-right: 1px solid #66666610;
+  border-bottom: 1px solid #00000019;
+  border-left: 1px solid #00000019;
+  border-right: 1px solid #00000019;
 }
 .conversationscard-avatar {
   width: 70px;
@@ -741,13 +747,21 @@ body {
 .conversationscard-body_footer-reactions {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 .conversationscard-body_footer-reactions > button {
   color: #969696;
+  font-size: 12px;
+  padding: 0 0;
+}
+.conversationscard-body_footer-reactions > button:hover svg path {
+  fill: currentColor;
 }
 .conversation-creation {
   padding: 20px;
+}
+.conversation-creation > .form-group label {
+  font-weight: 500;
 }
 .conversation-creation_footer {
   display: flex;
@@ -767,4 +781,18 @@ body {
   border-radius: 5px;
   color: #FFFFFF;
   padding: 7px 25px;
+}
+@media (min-width: 501px) {
+  .conversationscard {
+    background-color: #fff;
+    display: flex;
+    gap: 16px;
+  }
+  .conversationscard-body_footer-reactions {
+    gap: 50px;
+  }
+  .conversationscard-body_footer-reactions > button {
+    font-size: 16px;
+    padding: 0.375rem 0.75rem
+  }
 }
