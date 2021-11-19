@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Dreampulze</title>
+</head>
+
+<body>
+  <div class="body-child">
+    <aside class="sidebar">
+      <img src="./assets/images/sidebar.png" />
+    </aside>
+    <main class="main-wrapper container-fluid">
+      <div class="tickets">
+        <div class="tickets-header">
+          <h1>Tickets</h1>
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Create Ticket</button>
+        </div>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-created-tab" data-toggle="tab" href="#nav-created" role="tab" aria-controls="nav-created" aria-selected="true">
+              Created
+            </a>
+            <a class="nav-link" id="nav-claimed-tab" data-toggle="tab" href="#nav-claimed" role="tab" aria-controls="nav-claimed" aria-selected="false">
+              Claimed
+            </a>
+            <a class="nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">
+              History
+            </a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-created" role="tabpanel" aria-labelledby="nav-created-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status open">
+                      <span></span>
+                      <span>Open</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status open">
+                      <span></span>
+                      <span>Open</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-claimed" role="tabpanel" aria-labelledby="nav-claimed-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status open">
+                      <span></span>
+                      <span>Open</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status open">
+                      <span></span>
+                      <span>Open</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status closed">
+                      <span></span>
+                      <span>Closed</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ticketcard">
+                  <div class="ticketcard-header">
+                    <div class="ticketcard-header_no">
+                      <span class="ticketcard-header_no-icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 1.001V1.015C4.5 1.54543 4.71071 2.05414 5.08579 2.42921C5.46086 2.80429 5.96957 3.015 6.5 3.015C7.03043 3.015 7.53914 2.80429 7.91421 2.42921C8.28929 2.05414 8.5 1.54543 8.5 1.015L8.499 1H11C11.2652 1 11.5196 1.10536 11.7071 1.29289C11.8946 1.48043 12 1.73478 12 2V15.015C12 15.2802 11.8946 15.5346 11.7071 15.7221C11.5196 15.9096 11.2652 16.015 11 16.015H8.5C8.5 15.4846 8.28929 14.9759 7.91421 14.6008C7.53914 14.2257 7.03043 14.015 6.5 14.015C5.96957 14.015 5.46086 14.2257 5.08579 14.6008C4.71071 14.9759 4.5 15.4846 4.5 16.015H2C1.73478 16.015 1.48043 15.9096 1.29289 15.7221C1.10536 15.5346 1 15.2802 1 15.015V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L4.5 1.001Z" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.01501H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 5.01501H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 5.01501H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 12.015H4" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 12.015H7" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 12.015H10" stroke="#584475" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span>
+                      <span class="ticketcard-header_no-values">
+                        Ticket #2020-3454
+                      </span>
+                    </div>
+                    <div class="ticketcard-header_status closed">
+                      <span></span>
+                      <span>Closed</span>
+                    </div>
+                  </div>
+                  <h1>I have Issues Logging in to my account</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg invite-modal-dialog">
+      <div class="modal-content invite-members-modal">
+        <!-- Modal body -->
+        <button type="button" class="close dismiss-invite-modal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body invite-members">
+          <h1>Invite Members</h1>
+          <p>
+            Invite new members to your team, only premium <br> subscriber can be added to your team
+          </p>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1" class="invite-members_label">What Job Role are you looking
+                for?</label>
+              <div class="invite-select-wrapper">
+                <select class="form-control form-control-lg invite-members_select" id="exampleFormControlSelect1">
+                  <option>Cloud Computing Admin</option>
+                </select>
+                <div class="invite-search-btn">
+                  <button type="button" class="btn">Search</button>
+                </div>
+              </div>
+            </div>
+            
+          </form>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+          <div class="invite-member-card">
+            <div class="invite-member-card_details">
+              <img
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="member avatar" />
+              <div class="invite-member-card_title">
+                <span>Zahra Wiz</span>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <button class="btn">Invite Member</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
