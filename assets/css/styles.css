@@ -830,6 +830,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.tickets-header > a {
+  background: #584475;
+  color: #fff;
+  border-radius: 5px;
+  padding: 9px 30px;
+  font-weight: 500;
+}
+.tickets-header > a:hover {
+  color: #ddd;
+}
 .ticketcard {
   display: block;
   background: #FFFFFF;
@@ -1094,27 +1104,86 @@ body {
 .escalation-submit-btn > button:hover {
   color: #ddd;
 }
-/* .escalation-modal-body_closebtn-block > button {
-  background: #584475;
-  border-radius: 5px;
-  color: #FFFCFC;
-  font-weight: 500;
-} */
+
 @media (min-width: 501px) {
-  /* .invite-select-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  .invite-search-btn {
-    margin-top: 0;
-    margin-left: 5px;
-  }
-  .invite-members_select{
-    width: 500px;
-  } */
   .escalation-modal {
     padding: 20px;
   }
+}
 
-
+/* Create Ticket */
+.createticket-breadcrumb > a:hover {
+  text-decoration: none;
+}
+.createticket-breadcrumb > a:nth-child(1) {
+  color: #969696;
+}
+.createticket-breadcrumb > a:nth-child(2) {
+  color: #0C131C;
+}
+.createticket {
+  padding-top: 20px 30px;
+}
+.createticket > h1 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+.createticket > form {
+  padding-top: 20px;
+}
+.ticket-form-inputs > .form-group label {
+  color: #0C131C;
+}
+.ticket-form-inputs > .form-group input,
+.ticket-form-inputs > .form-group select
+  {
+  background: #FBFBFB;
+  border: 1px solid #6666662C;
+  border-radius: 5px;
+}
+.ticket-form-inputs > .form-group textarea {
+  resize: none;
+  background: #FBFBFB;
+  border: 1px solid #6666662C;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ticket-form-inputs > .form-group input::placeholder, .ticket-form-inputs > .form-group textarea::placeholder  {
+  color: #969696;
+}
+.create-ticket-upload {
+  background: #FFF;
+  border-left: 1px solid #6666662C;
+  border-right: 1px solid #6666662C;
+  border-bottom: 1px solid #6666662C;
+}
+.createticket-meta {
+  padding: 20px;
+  background: #FBFBFB;
+  border: 1px solid #6666662C;
+  border-radius: 5px;
+}
+.createticket-meta > .ticket-data:nth-child(1) {
+  margin-top: 20px;
+}
+.createticket-meta > .ticket-data > .ticket-data_details > .ticketcard-header_status.open {
+  width: 95px;
+  margin-top: 2px;
+}
+.createticket-meta-footer {
+  padding-top: 56px;
+}
+.createticket-meta-footer > button {
+  font-weight: 500;
+  color: #fff;
+  padding: 9px 20px;
+  background: #584475;
+  border-radius: 5px;
+}
+@media (min-width: 501px) {
+  .createticket-meta {
+    margin-top: 30px;
+  }
 }
