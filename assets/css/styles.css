@@ -1323,3 +1323,96 @@ body {
     margin-top: 0;
   }
 }
+
+/* tickets queue */
+.ticketsqueue-header {
+  display: block;
+}
+.ticketsqueue-header > h1 {
+  color: #0C131C;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.ticketsqueue-header-filter {
+  display: block;
+}
+.ticketsqueue-header-filter  > .ticketsqueue-header-filter_select {
+  display: flex;
+  gap: 10px;
+}
+.ticketsqueue-header-filter  > .ticketsqueue-header-filter_select label {
+  min-width: 55px;
+  letter-spacing: -0.27px;
+  color: #969696;
+}
+.ticketsqueue-header-filter  > .ticketsqueue-header-filter_select select {
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #66666665;
+  border-radius: 2px;
+}
+.ticketsqueue-header-filter_field {
+  position: relative;
+}
+.ticketsqueue-header-filter > .ticketsqueue-header-filter_field input {
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #66666665;
+  border-radius: 2px;
+}
+.ticketsqueue-header-filter_search-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: #969696;
+  border-radius: 5px;
+  right: 8px;
+  top: 6px;
+}
+.ticketsqueue-card {
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #6666662C;
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.ticketsqueue-card-item > span {
+  display: block;
+}
+.ticketsqueue-card-item > span:nth-child(1) {
+  font-size: 14px;
+  letter-spacing: -0.24px;
+  color: #969696;
+  font-weight: 500;
+}
+.ticketsqueue-card-item > span:nth-child(2) {
+  letter-spacing: -0.3px;
+  color: #0C131C;
+  padding-top: 8px;
+}
+@media (min-width: 501px) {
+  .ticketsqueue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ticketsqueue-header > h1 {
+    padding-bottom: 0;
+  }
+  .ticketsqueue-header-filter {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .ticketsqueue-header-filter  > .ticketsqueue-header-filter_select select {
+    width: 210px;
+  }
+  .ticketsqueue-header-filter > .ticketsqueue-header-filter_field input {
+    width: 323px;
+  }
+}
