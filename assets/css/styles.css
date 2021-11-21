@@ -17,9 +17,9 @@ body {
   font-size: 26px;
   font-weight: bold;
 }
-/* .tabnav {
-  padding: 20px;
-} */
+.tabnav {
+  position: sticky;
+}
 .nav-pills {
   background-color: #9475C11D;
   border-radius: 5px;
