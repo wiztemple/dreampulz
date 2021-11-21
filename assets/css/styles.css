@@ -17,7 +17,7 @@ body {
   font-size: 26px;
   font-weight: bold;
 }
-.tabnav {
+.tabnav > .nav {
   position: sticky;
 }
 .nav-pills {
@@ -53,6 +53,15 @@ body {
 }
 .teamperformance > .table > thead > tr th {
   font-size: 20px;
+}
+.teamperformance > .table td {
+  position: sticky;
+  background-color: #fff;
+}
+.teamperformance > .table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 10;
 }
 .teamperformance > .table th, .teamperformance > .table td {
   vertical-align: middle;
