@@ -1425,3 +1425,116 @@ body {
     width: 323px;
   }
 }
+
+/* caledar */
+.calendar {
+  position: relative;
+}
+.calendar-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.calendar-card {
+  padding-bottom: 20px;
+}
+@media (min-width: 501px) {
+  .calendar-card {
+    padding-bottom: 0;
+  }
+}
+.time-box {
+  overflow: hidden;
+  position: relative;
+}
+.time-box > .time-box-item {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #6666662C;
+  padding: 5px;
+  position: relative;
+  z-index: 0;
+}
+.time-box > .time-box-item:first-child {
+  margin-top: 20px;
+}
+.time-box > .time-box-item:last-child {
+  border-bottom: 1px solid #6666662C;
+}
+.calendar-time {
+  padding-top: 80px;
+}
+.calendar-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.calendar-time > span {
+  width: max-content;
+  color: #969696;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.one-am, .two-am {
+  padding-top: 20px;
+}
+.three-am, .four-am {
+  padding-top: 24px;
+}
+.four-am, .five-am, .six-am, .seven-am, .eight-am, .nine-am, .ten-am, .eleven-am, .twelve-pm, .one-pm,
+.two-pm, .three-pm, .four-pm, .five-pm, .six-pm, .seven-pm, .eight-pm, .nine-pm, .ten-pm, .eleven-pm {
+  padding-top: 22px;
+}
+/* .calendar-time > span:not(:first-child) {
+  padding-top: 40px;
+} */
+.calendar-meeting {
+  height: 95px;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.calendar-meeting.active {
+  background: #E8E2F0;
+}
+.calendar-meeting > span {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: -0.27px;
+  color: #0C131C;
+  font-weight: 500;
+}
+.calendar-item {
+  width: 100%;
+  background: #6666660A;
+  border: 1px solid #6666662C;
+}
+.calendar-item.active {
+  border: 1px solid #9475C1;
+}
+.calendar-item.active > span:nth-child(2) {
+  width: 35px;
+  height: 35px;
+  background: #9475C1;
+  color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  line-height: 22px;
+}
+.calendar-item > span {
+  display: block;
+}
+.calendar-item > span:nth-child(1){
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+}
+.calendar-item > span:nth-child(2){
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.36px;
+  font-weight: bold;
+  color: #0C131C;
+  padding-top: 8px;
+}
